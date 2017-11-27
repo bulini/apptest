@@ -1,0 +1,31 @@
+<div class="container">
+
+  <div id="projects" class="column">
+    <%= link_to 'nuovo', new_project_path, class: 'is-pulled-right button' %>
+    <h1 class="title is-2">Projects</h1>
+    <table class="table is-bordered is-striped is-narrow is-fullwidth">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th><abbr title="Name">Name</abbr></th>
+          <th><abbr title="prod_url">prod url</abbr></th>
+          <th><abbr title="staging_url">staging url</abbr></th>
+          <th><abbr title="admin_user">admin user</abbr></th>
+          <th><abbr title="admin_password">admin password</abbr></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @projects.each do |p| %>
+        <tr>
+          <td><%= link_to p.id, edit_project_path(p)  %></td>
+          <td><%= p.name %></td>
+          <td><%= p.prod_url %></td>
+          <td><%= link_to p.staging_url, p.staging_url %></td>
+          <td><%= p.admin_user %></td>
+          <td><%= p.admin_password %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

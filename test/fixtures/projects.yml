@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  prod_url: MyString
+  staging_url: MyString
+  repo_url: MyString
+  admin_user: MyString
+  admin_password: MyString
+  ftp_host: MyString
+  ftp_user: MyString
+  ftp_password: MyString
+
+two:
+  name: MyString
+  prod_url: MyString
+  staging_url: MyString
+  repo_url: MyString
+  admin_user: MyString
+  admin_password: MyString
+  ftp_host: MyString
+  ftp_user: MyString
+  ftp_password: MyString

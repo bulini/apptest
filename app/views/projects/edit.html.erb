@@ -1,0 +1,12 @@
+<div class="container">
+  <div id="project" class="column">
+    <nav class="breadcrumb" aria-label="breadcrumbs">
+      <ul>
+        <li><%= link_to 'progetti', projects_path %></li>
+        <li class="is-active"><a href="#"><%= @project.name %></a></li>
+      </ul>
+    </nav>
+    <h1 class="title is-2">Project</h1>
+    <%= render 'form' %>
+  </div>
+</div>
